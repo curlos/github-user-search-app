@@ -1,0 +1,74 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+  font-weight: 400;
+}
+
+.mainContainer {
+  min-height: 100vh;
+  min-width: 100vw;
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #141D2F;
+}
+
+.mainCard {
+  color: white;
+  background-color: #1E2A48;
+  padding: 30px;
+  border-radius: 15px;
+  width: 700px;
+}
+
+.searchBar {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  background-color: #1E2A48;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.searchBar i {
+  font-size: 20px;
+  color: #0278FE;
+}
+
+.searchBar input {
+  background-color: transparent;
+  border: none;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-size: 18px;
+  outline: none;
+  color: white;
+}
+
+.searchBar button {
+  padding: 15px;
+  background-color: #0278FE;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,63 @@
+@import 'colors';
+@import 'media-queries';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+  font-weight: 400;
+}
+
+.mainContainer {
+  min-height: 100vh;
+  min-width: 100vw;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $darkBlue;
+}
+
+.mainCard {
+  color: white;
+  background-color: $cardBlue;
+  padding: 30px;
+  border-radius: 15px;
+  width: 700px;
+}
+
+.searchBar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: $cardBlue;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+
+  i {
+    font-size: 20px;
+    color: $blue;
+  }
+
+  input {
+    background-color: transparent;
+    border: none;
+    flex: 1;
+    font-size: 18px;
+    outline: none;
+    color: white;
+  }
+
+  button {
+    padding: 15px;
+    background-color: $blue;
+    color: white;
+    border: none;
+    border-radius: 10px;
+  }
+}
