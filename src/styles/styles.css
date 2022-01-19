@@ -9,7 +9,6 @@
 
 .mainContainer {
   min-height: 100vh;
-  min-width: 100vw;
   max-width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -21,14 +20,31 @@
       -ms-flex-align: center;
           align-items: center;
   background-color: #141D2F;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-.mainCard {
-  color: white;
-  background-color: #1E2A48;
-  padding: 30px;
-  border-radius: 15px;
-  width: 700px;
+.faded {
+  color: #5e6c8d;
+}
+
+.topBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+
+.topBar .themeType {
+  font-size: 18px;
 }
 
 .searchBar {
@@ -39,7 +55,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 10px;
+  gap: 20px;
   background-color: #1E2A48;
   padding: 10px;
   padding-left: 20px;
@@ -70,5 +86,136 @@
   color: white;
   border: none;
   border-radius: 10px;
+}
+
+.mainCard {
+  color: white;
+  background-color: #1E2A48;
+  padding: 30px;
+  border-radius: 15px;
+  width: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+
+.mainCard .skeletonIcon {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: #141D2F;
+  margin-right: 30px;
+}
+
+.mainCard .skeletonUsername {
+  width: 250px;
+  height: 20px;
+  border-radius: 15px;
+  background-color: #141D2F;
+  margin-bottom: 10px;
+}
+
+.mainCard .skeletonLogin {
+  width: 150px;
+  height: 20px;
+  border-radius: 15px;
+  background-color: #141D2F;
+}
+
+.mainCard .skeletonDate {
+  width: 100px;
+  height: 20px;
+  border-radius: 15px;
+  background-color: #141D2F;
+}
+
+.mainCard .skeletonBio {
+  width: 300px;
+  height: 20px;
+  border-radius: 15px;
+  background-color: #141D2F;
+}
+
+.mainCard .cardLeft img {
+  height: 100px;
+  border-radius: 50%;
+}
+
+.mainCard .cardRight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.mainCard .cardRight .topUserInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.mainCard .cardRight .topUserInfo .username {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.mainCard .cardRight .topUserInfo .login {
+  color: #0278FE;
+}
+
+.mainCard .cardRight .userStats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 25px;
+  background-color: #141D2F;
+  border-radius: 15px;
+  margin: 20px 0;
+}
+
+.mainCard .cardRight .userStats .statDesc {
+  color: #5e6c8d;
+}
+
+.mainCard .cardRight .userStats .statNum {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.mainCard .cardRight .bottomSection {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+.mainCard .cardRight .bottomSection .bottomSectionInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
 }
 /*# sourceMappingURL=styles.css.map */

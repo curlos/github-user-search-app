@@ -11,27 +11,37 @@
 
 .mainContainer {
   min-height: 100vh;
-  min-width: 100vw;
   max-width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: $darkBlue;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-.mainCard {
-  color: white;
-  background-color: $cardBlue;
-  padding: 30px;
-  border-radius: 15px;
-  width: 700px;
+.faded {
+  color: $text;
+}
+
+.topBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 22px;
+  margin-bottom: 30px;
+
+  .themeType {
+    font-size: 18px;
+  }
 }
 
 .searchBar {
   width: 100%;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
   background-color: $cardBlue;
   padding: 10px;
   padding-left: 20px;
@@ -59,5 +69,121 @@
     color: white;
     border: none;
     border-radius: 10px;
+  }
+}
+
+.mainCard {
+  color: white;
+  background-color: $cardBlue;
+  padding: 30px;
+  border-radius: 15px;
+  width: 700px;
+  display: flex;
+  gap: 30px;
+
+  // Skeleton components
+  .skeletonIcon {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: $darkBlue;
+    margin-right: 30px;
+  }
+
+  .skeletonUsername {
+    width: 250px;
+    height: 20px;
+    border-radius: 15px;
+    background-color: $darkBlue;
+    margin-bottom: 10px;
+  }
+
+  .skeletonLogin {
+    width: 150px;
+    height: 20px;
+    border-radius: 15px;
+    background-color: $darkBlue;
+  }
+
+  .skeletonDate {
+    width: 100px;
+    height: 20px;
+    border-radius: 15px;
+    background-color: $darkBlue;
+  }
+
+  .skeletonBio {
+    width: 300px;
+    height: 20px;
+    border-radius: 15px;
+    background-color: $darkBlue;
+  }
+
+  .skeletonStats {
+
+  }
+
+  
+  // Main components
+
+  .cardLeft {
+    img {
+      height: 100px;
+      border-radius: 50%;
+    }
+  }
+
+  .cardRight {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+
+    .topUserInfo {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+  
+      .username {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 5px;
+      }
+
+      .login {
+        color: $blue;
+      }
+    }
+
+    .userStats {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 25px;
+      background-color: $darkBlue;
+      border-radius: 15px;
+      margin: 20px 0;
+      
+      .statDesc {
+        color: $text;
+      }
+
+      .statNum {
+        font-weight: 700;
+        font-size: 20px;
+      }
+    }
+
+    .bottomSection {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 20px;
+
+      .bottomSectionInfo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+    }
   }
 }
