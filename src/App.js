@@ -30,7 +30,7 @@ const App = () => {
 
   return (
     <div className="mainContainer">
-      <div className="">
+      <div className="middleCard">
         <div className="topBar">
           <div>devfinder</div>
           <div className="themeType">
@@ -39,7 +39,7 @@ const App = () => {
           </div>
         </div>
         <form className="searchBar" onSubmit={handleSearch}>
-          <i class="fas fa-search"></i>
+          <i onClick={handleSearch} class="fas fa-search"></i>
           <input placeholder="Search GitHub username..." onChange={(e) => setQuery(e.target.value)} />
           <button type="submit">Search</button>
         </form>
@@ -63,8 +63,16 @@ const App = () => {
                   </div>
                 ) : (
                   <div>
-                    <div className="username">{user.name}</div>
-                    <div className="login">@{user.login}</div>
+                    <div>
+                      <a href={`https://github.com/${user.login}`}>
+                        <div className="username">{user.name}</div>
+                      </a>
+                    </div>
+                    <div>
+                      <a href={`https://github.com/${user.login}`}>
+                        <div className="login">@{user.login}</div>
+                      </a>
+                    </div>
                   </div>
                 )}
               </div>
@@ -128,12 +136,8 @@ const App = () => {
                 <div>{user.company || <span className="faded">Not Available</span>}</div>
               </div>
             </div>
-
-            
-
           </div>
         </div>
-
       </div>
     </div>
   );

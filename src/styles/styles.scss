@@ -11,6 +11,7 @@
 
 .mainContainer {
   min-height: 100vh;
+  width: 100vw;
   max-width: 100%;
   display: flex;
   justify-content: center;
@@ -67,6 +68,8 @@
     padding: 15px;
     background-color: $blue;
     color: white;
+    font-weight: bold;
+    cursor: pointer;
     border: none;
     border-radius: 10px;
   }
@@ -119,10 +122,6 @@
     background-color: $darkBlue;
   }
 
-  .skeletonStats {
-
-  }
-
   
   // Main components
 
@@ -143,8 +142,13 @@
       display: flex;
       justify-content: space-between;
       width: 100%;
+
+      a {
+        text-decoration: none;
+      }
   
       .username {
+        color: white;
         font-size: 24px;
         font-weight: 700;
         margin-bottom: 5px;
@@ -162,7 +166,7 @@
       padding: 25px;
       background-color: $darkBlue;
       border-radius: 15px;
-      margin: 20px 0;
+      margin: 5px 0;
       
       .statDesc {
         color: $text;
@@ -186,4 +190,95 @@
       }
     }
   }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 449px) {
+  .mainContainer {
+    padding: 20px;
+    text-align: center;
+
+    .searchBar button {
+      display: none;
+    }
+
+    .middleCard {
+      width: 100%;
+    }
+
+    .mainCard {
+      flex-direction: column;
+      width: 100%;
+
+      .skeletonBio, .skeletonLogin {
+        width: 50px;
+      }
+
+      .skeletonUsername {
+        width: 100px;
+      }
+
+      .topUserInfo {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .userStats {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+      }
+
+      .bottomSection {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+      }
+
+      
+    }
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 450px) and (max-width: 600px) {
+  .mainContainer {
+    padding: 20px;
+
+    .mainCard {
+      flex-direction: column;
+      width: 100%;
+
+      .skeletonBio, .skeletonLogin {
+        width: 120px;
+      }
+
+      .skeletonUsername {
+        width: 150px;
+      }
+
+      
+    }
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
 }
